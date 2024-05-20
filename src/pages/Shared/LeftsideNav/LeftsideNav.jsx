@@ -27,13 +27,11 @@ const LeftsideNav = () => {
    <h3 className="uppercase text-center py-11 font-serif  text-slate-400 text-3xl" >National_News</h3>
     {
         categories.map(categori=><Link className=" block ml-4 text-xl gap-10 text-blue-700"
-         key={categori.id} 
-         to={(`/categori/${categori.id}`)}>
-         {categori.name} 
+         key={categori.id}to={(`/categori/${categori.id}`)}>{categori.name} 
         </Link>)
     }
     <div>
-        
+
      <h1>  <img src={category1} alt="" /> 
      Bayern Slams Authorities Over Flight Delay to Club World Cup</h1>
      <p className="flex gap-2 px-2 p-3 m-2">

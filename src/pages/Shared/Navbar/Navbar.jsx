@@ -5,6 +5,7 @@ const navlinks= <>
  <li><NavLink to="/">HOME</NavLink></li>
  <li> <NavLink to="/about">ABOUT </NavLink></li>
 <li><NavLink to="/carear">CAREER</NavLink></li>
+<li><NavLink to="/login">LOG IN</NavLink></li>
 </>
 
 
@@ -42,7 +43,7 @@ const Navbar = () => {
           alt="Tailwind CSS Navbar component"  />
         </div>
       </div>
-<Link>
+<Link to="/login">
 <a className="btn btn-primary">LOG_IN</a>
 </Link>
    
