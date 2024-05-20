@@ -18,11 +18,11 @@ const Home = () => {
              <LeftsideNav></LeftsideNav>
             </div>
 
-            <div className=" md:grid-cols-2 border">
+            <div className=" md:grid-cols-2 border ">
          <h1 className="text-4xl ">News comming soon.....</h1>
             </div>
 
-            <div className="border  ">
+            <div className="border  border-x-fuchsia-500   border-y-fuchsia-500">
             <Rightsidenav></Rightsidenav>
             </div>
             </div>

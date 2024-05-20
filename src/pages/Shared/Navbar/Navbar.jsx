@@ -4,7 +4,7 @@ import user from "../../../assets/pic.jpg";
 const navlinks= <>
  <li><NavLink to="/">HOME</NavLink></li>
  <li> <NavLink to="/about">ABOUT </NavLink></li>
-<li><NavLink to="/carear">CAREAR</NavLink></li>
+<li><NavLink to="/carear">CAREER</NavLink></li>
 </>
 
 
