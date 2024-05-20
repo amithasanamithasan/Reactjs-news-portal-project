@@ -18,7 +18,7 @@ const Navbar = () => {
  
 
   const{user ,Logout}=useContext(AuthContext)
-  console.log(user,Logout);
+  // console.log(user,Logout);
 
 
   const handelsingout=()=>{
