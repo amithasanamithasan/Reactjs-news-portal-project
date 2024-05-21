@@ -3,14 +3,14 @@ import { CiCalendarDate } from "react-icons/ci";
 import moment from 'moment';
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import  category1  from "../../../assets/1.png";
-import  category2  from "../../../assets/2.png";
-import  category3  from "../../../assets/3.png";
+import  img1  from "../../../assets/1.png";
+import  img2  from "../../../assets/2.png";
+import  img3  from "../../../assets/3.png";
 
 const LeftsideNav = () => {
     const [categories,setCategories]=useState([]);
 
-    useEffect(()=>{
+   useEffect(()=>{
   fetch('categories.json')
   .then(res=> res.json())
   .then(data=> setCategories(data))
@@ -32,7 +32,8 @@ const LeftsideNav = () => {
     }
     <div>
 
-     <h1>  <img src={category1} alt="" /> 
+{/* react icon and assets image gula show korci date time use korci */}
+     <h1>  <img src={img1 } alt="" /> 
      Bayern Slams Authorities Over Flight Delay to Club World Cup</h1>
      <p className="flex gap-2 px-2 p-3 m-2">
     <MdOutlineSportsSoccer className="text-2xl">
@@ -42,7 +43,7 @@ const LeftsideNav = () => {
 
 
 
-     <h1>  <img src={category2} alt="" />
+     <h1>  <img src={img2} alt="" />
       Bayern Slams Authorities Over Flight Delay to Club World Cup</h1>
      <p className="flex gap-2 px-2 p-3 m-2"> 
      <MdOutlineSportsSoccer className="text-2xl">
@@ -52,7 +53,7 @@ const LeftsideNav = () => {
         {moment().format("dddd, MMMM D YYYY ")} </p> 
 
 
-     <h1>  <img src={category3} alt="" /> 
+     <h1>  <img src={img3} alt="" /> 
      Bayern Slams Authorities Over Flight Delay to Club World Cup</h1>
    <p className="flex gap-2 px-2 p-3 m-2">
      <MdOutlineSportsSoccer className="text-2xl">
