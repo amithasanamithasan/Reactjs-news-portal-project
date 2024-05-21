@@ -5,13 +5,14 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// update firebaseconfig 
 const firebaseConfig = {
-  apiKey: "AIzaSyDMdErCNWu2YbXW2LG41Fi0NzsXbSVALws",
-  authDomain: "reactjs-news-portal-project.firebaseapp.com",
-  projectId: "reactjs-news-portal-project",
-  storageBucket: "reactjs-news-portal-project.appspot.com",
-  messagingSenderId: "460670219809",
-  appId: "1:460670219809:web:5871d666a870182b991560"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId:import.meta.env. VITE_PROJECTID,
+  storageBucket:import.meta.env. VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId:import.meta.env. VITE_APPID,
 };
 
 // Initialize Firebase
