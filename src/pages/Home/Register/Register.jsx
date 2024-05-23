@@ -1,13 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link,  useNavigate } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../../Provider/AuthProviders";
+import toast from "react-hot-toast";
 
 const Register = () => {
+  const[success, setSuccess]=useState();
+    const{createUser}=useContext(AuthContext)
+    const navigate=useNavigate()
 
-    const{createUser}=useContext(AuthContext);
 
-     console.log(createUser)
 
     const registerforvalue=e=>{
  e.preventDefault();
@@ -20,7 +22,9 @@ const Register = () => {
  createUser(email,password)
  .then(result=>{
     console.log(result.user);
-
+    toast.success('USER CREATED SUCCESSFULLY!')
+    setSuccess('USER CREATED SUCCESSFULLY');
+  navigate('/login')
 })
 .catch(error=>{
     console.log(error);
@@ -35,7 +39,7 @@ const Register = () => {
       <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col ">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
+          <h1 className="text-5xl font-bold">REGISTER INPUT FIELD PLEASE !</h1>
           <p className="py-6"></p>
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -66,7 +70,8 @@ const Register = () => {
               
             </div>
             <div className="form-control mt-6">
-                <button  className="btn btn-accent">Register</button>
+ <button  className="btn btn-accent">Register</button>
+               
               </div>
 
         <div className="flex items-start mb-5">
@@ -83,8 +88,11 @@ const Register = () => {
   </div>
 
  </form>
+        {
+              success&& <p className="text-2xl text-center text-green-600"> User Register SuccesFully</p>
+            }
 
-      <p className="p-4" >Please Form Fillup &! 
+      <p className="p-4 text-center" >Please Form Fillup &! 
       <Link to="/login" className="underline text-green-800">  
       LOG_IN</Link></p> 
        

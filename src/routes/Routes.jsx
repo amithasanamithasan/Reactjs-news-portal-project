@@ -7,11 +7,14 @@ import NewsPage from "../pages/News/NewsPage";
 import Privetroute from "./Privetroute";
 import About from "../pages/Home/About";
 import UserProfile from "../pages/Home/UserProfile/UserProfile";
+import Error from "../DataNotfound/Error";
+
 
 const router = createBrowserRouter([
     {
       path: "/",
       element:<Root></Root>,
+      errorElement:<Error></Error>,
       children:[
         {
             path:'/',
@@ -28,12 +31,14 @@ const router = createBrowserRouter([
         },
         {
           path:'/news/:id',
-          element:<Privetroute><NewsPage></NewsPage></Privetroute>
+          element:<Privetroute><NewsPage></NewsPage></Privetroute>,
+         
         },
         {
-          path:'/login',
-          element:<Login></Login>
-        },
+      path:'/login',
+      element:<Login></Login>,
+    },
+        
         {
           path:"/register",
           element:<Register></Register>

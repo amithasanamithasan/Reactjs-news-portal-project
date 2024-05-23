@@ -6,16 +6,32 @@ import { FaInstagram } from "react-icons/fa";
 import swiming1 from "../../../assets/qZone1.png";
 import swiming2 from "../../../assets/qZone2.png";
 import swiming3 from "../../../assets/qZone3.png";
+import { useContext } from "react";
+import { AuthContext } from "../../../Provider/AuthProviders";
+import { getAuth } from "firebase/auth";
 
+
+const auth = getAuth();
 const Rightsidenav = () => {
+  const {googleLogin}=useContext(AuthContext);
+
+  const handelgoogle=()=>{
+    googleLogin(auth)
+    .then(res=>console.log(res))
+    .catch(error=>console.log(error))
+  }
+
     return (
+
+
+
         <div className=" space-y-3  p-4 mb-6" >
   
         <p className="font-poppins font-semibold p-1 text-2xl text-blue-600">Login_With</p>
             
 
           <div className="border p-1  m-1 border-cyan-400 rounded-md  ">
-          <button className="py-1 ">
+          <button onClick={handelgoogle}   className="py-1 ">
           <p className="text-2x flex  text-cyan-500"> <FaGoogle className="mr-1"></FaGoogle> Loin with Google </p>
                         
         </button>
