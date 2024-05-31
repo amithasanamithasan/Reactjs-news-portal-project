@@ -14,14 +14,14 @@ const Newscards = ({news}) => {
                 <p>
                   {details.slice(0, 200)}...
                   <Link to={`/news/${_id}`} className="text-orange-300">
-                    Read more
+                 <button  className="text-1xl">  Read more</button> 
                   </Link>
                 </p>
               ) 
             : <p>{details}</p>
         }
           <div className="card-actions justify-end">
-            {/* <button className="btn btn-primary"></button> */}
+             {/* <button className="btn btn-primary"></button>  */}
           </div>
         </div>
       </div>

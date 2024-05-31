@@ -25,43 +25,43 @@ const Rightsidenav = () => {
 
 
 
-        <div className=" space-y-3  p-4 mb-6" >
+        <div className=" space-y-3   p-4 mb-6" >
   
-        <p className="font-poppins font-semibold p-1 text-2xl text-blue-600">Login_With</p>
+        <p className="font-poppins font-semibold p-1 text-3xl text-blue-600">Login_With</p>
             
 
-          <div className="border p-1  m-1 border-cyan-400 rounded-md  ">
+          <div className="p-1  m-1 border-cyan-400 rounded-md  ">
           <button onClick={handelgoogle}   className="py-1 ">
-          <p className="text-2x flex  text-cyan-500"> <FaGoogle className="mr-1"></FaGoogle> Loin with Google </p>
+          <p className="text-3x flex  text-cyan-500"> <FaGoogle className="mr-1 text-2xl"></FaGoogle> Loin with Google </p>
                         
         </button>
           </div>
        
            
-          <div className="border  p m-1 border-cyan-400 p-1 rounded-md ">
+          <div className="  p m-1 border-cyan-400 p-1 rounded-md ">
           <button className="py-1 ">
-          <p className="text-2x flex  "> <FaGithub className="mr-1"></FaGithub> Loin with GitHub </p>
+          <p className="text-2x flex  "> <FaGithub className="mr-1 text-2xl"></FaGithub> Loin with GitHub </p>
           </button>
           </div>
 
           <p className="font-poppins font-semibold p-1 text-2xl text-slate-00">Find_US_On</p>
-          <div className="border p-1  m-1 border-cyan-400 rounded-md  ">
+          <div className=" p-1  m-1 border-cyan-400 rounded-md  ">
           <button className="py-1 ">
-          <h2 className="text-2x flex  text-cyan-500"> <FaFacebook className="mr-1"></FaFacebook>Facebook </h2>
+          <h2 className="text-2x flex  text-cyan-500"> <FaFacebook className="mr-1 text-2xl"></FaFacebook>Facebook </h2>
                         
         </button>
           </div>
        
            
-          <div className="border  p m-1 border-cyan-400 p-1 rounded-md ">
+          <div className="  p m-1 border-cyan-400 p-1 rounded-md ">
           <button className="py-1 ">
-          <h2 className="text-2x flex  "> <AiFillTwitterCircle className="mr-1 text-slate-600"></AiFillTwitterCircle>Twitter</h2>
+          <h2 className="text-2x flex  "> <AiFillTwitterCircle className="mr-1 text-slate-600 text-2xl"></AiFillTwitterCircle>Twitter</h2>
           </button>
           </div>
 
-          <div className="border  p m-1 border-cyan-400 p-1 rounded-md ">
+          <div className="  p m-1 border-cyan-400 p-1 rounded-md ">
           <button className="py-1 ">
-          <h2 className="text-2x flex  "> <FaInstagram className="mr-1 text-orange-400"></FaInstagram>Instagram</h2>
+          <h2 className="text-2x flex  "> <FaInstagram className="mr-1 text-orange-400 text-2xl"></FaInstagram>Instagram</h2>
           </button>
       
           </div>

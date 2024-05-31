@@ -23,7 +23,8 @@ const Navbar = () => {
  {user && <>
      
     <li><NavLink to="/profile">User profile</NavLink></li>
-   </> }
+   </> 
+   }
  </>  
   // console.log(user,Logout);
 

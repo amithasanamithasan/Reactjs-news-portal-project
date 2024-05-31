@@ -25,7 +25,7 @@ const Home = () => {
              <LeftsideNav></LeftsideNav>
             </div>
 
-            <div className=" md:grid-cols-2 max-w-3xl  ">
+            <div className=" md:grid-cols-3 max-w-3xl  ">
        {
         news.map(aNews=><Newscards key={aNews.id} news={aNews}></Newscards>)
        }

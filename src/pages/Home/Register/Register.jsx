@@ -89,8 +89,8 @@ const Register = () => {
 
  </form>
         {
-              success&& <p className="text-2xl text-center text-green-600"> User Register SuccesFully</p>
-            }
+ success && <p className="text-2xl text-center text-green-600"> User Register SuccesFully</p>
+         }
 
       <p className="p-4 text-center" >Please Form Fillup &! 
       <Link to="/login" className="underline text-green-800">  

@@ -42,13 +42,12 @@ if (password.length < 6) {
   setErrormessage('Password should be at least 6 characters')
   return;
 }
-else if(!/[A-Z]/.test(password)) 
+else if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email))
   {
-    toast.error('Password must have 8 digit  at least one Uppercase Character');
+ console.log('please right a valid email');
+ return;
+}
 
-    setErrormessage('Password must have 8 digit  at least one Uppercase Character');
-    return;
-   }
 
 sigin(email,password)
  .then(result=>{
@@ -124,7 +123,7 @@ const handelforgettpass= () =>{
                 </label>
                 <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                 <label className="label">
-                  <a onClick={handelforgettpass}  className="label-text-alt link link-hover">Forgot password?</a>
+                  <a   className="label-text-alt link link-hover">Forgot password?</a>
                 </label>
               </div>
               <div className="form-control mt-6">
